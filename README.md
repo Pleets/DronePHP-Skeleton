@@ -1,4 +1,4 @@
-# DronePHP Skeleton appplication
+# DronePHP Skeleton application
 ### Make it easy
 
 Check out documentation!
