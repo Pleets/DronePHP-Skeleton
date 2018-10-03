@@ -17,6 +17,14 @@ return [
                 'controller' => 'Dashboard',
                 'view' => 'index'
             ],
+            # Zend\Router\Http routes
+            'myroute' => Zend\Router\Http\Literal::factory([
+                'route' => '/example',
+                'defaults' => [
+                    'controller' => 'App\Controller\Matched',
+                    'action' => 'doIt',
+                ],
+            ])
         ],
     ],
     'environment' => [
