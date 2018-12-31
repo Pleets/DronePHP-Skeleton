@@ -109,16 +109,9 @@
 		<?= $this->content() ?>
 	</div>
 
-	<script src="<?= $this->basePath(); ?>/public/js/jquery-3.3.1.slim.min"></script>
-	<script src="<?= $this->basePath(); ?>/public/js/popper-1.12.9.min"></script>
+	<script src="<?= $this->basePath(); ?>/public/js/jquery-3.3.1.slim.min.js"></script>
+	<script src="<?= $this->basePath(); ?>/public/js/popper-1.12.9.min.js"></script>
 	<script src="<?= $this->basePath(); ?>/public/js/bootstrap.min.js"></script>
-
-	<!-- update page title -->
-	<?php if ($this->getTitle() !== $_title): ?>
-		<script type="text/javascript">
-			$("head title").text($("head title").text() + ' - <?= $this->getTitle() ?>');
-		</script>
-	<?php endif; ?>
 
 </body>
 
