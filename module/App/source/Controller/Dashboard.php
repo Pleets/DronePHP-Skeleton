@@ -2,12 +2,13 @@
 
 namespace App\Controller;
 
-use Drone\Mvc\AbstractionController;
+use Drone\Mvc\View;
+use Drone\Mvc\AbstractController;
 
-class Dashboard extends AbstractionController
+class Dashboard extends AbstractController
 {
 	public function index()
 	{
-		return array();
+        return new View("index", ["framework" => "DronePHP"]);
 	}
 }

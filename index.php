@@ -10,6 +10,7 @@ ini_set("memory_limit","1024M");
 
 // Run application
 require_once("vendor/autoload.php");
+require_once("Application.php");
 
 function ifdef($value, array $needle)
 {
@@ -17,5 +18,5 @@ function ifdef($value, array $needle)
 }
 
 $config = include "config/application.config.php";
-$mvc = new Drone\Mvc\Application($config);
+$mvc = new Application($config);
 $mvc->run();

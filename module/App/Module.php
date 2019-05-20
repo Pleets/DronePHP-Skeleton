@@ -2,12 +2,12 @@
 
 namespace App;
 
-Use Drone\Mvc\AbstractionModule;
-use Drone\Mvc\AbstractionController;
+Use Drone\Mvc\AbstractModule;
+use Drone\Mvc\AbstractController;
 
-class Module extends AbstractionModule
+class Module extends AbstractModule
 {
-	public function init(AbstractionController $c)
+	public function init()
 	{
 		// init procedures
 	}

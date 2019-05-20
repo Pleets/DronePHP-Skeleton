@@ -1,7 +1,8 @@
-<?php $this->setTitle("Drone Index") ?>
+@extends('layout.layout')
 
+@section('content')
 <div class="jumbotron">
-    <h1 class="display-4">DronePHP <small>Framework</small></h1>
+    <h1 class="display-4"><?= $framework ?> <small>Framework</small></h1>
     <p class="lead">Make it easy!</p>
     <hr class="my-4">
     <p class="lead">
@@ -16,3 +17,8 @@
 </p>
 
 <br /><br />
+@endsection('content')
+
+@section('footer')
+Copyright 2019
+@endsection('footer')
